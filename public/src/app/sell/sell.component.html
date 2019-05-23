@@ -1,0 +1,9 @@
+<h1>Sell ShintoCoins</h1>
+<p>Current ShintoCoin Value: ${{ shintoValue }}.00</p>
+<p>Number of ShintoCoins Owned: {{ shintoBalance }}</p>
+<form (submit)="onSubmit()">
+  <input type="number" name="num" [(ngModel)]="shinto.sellQty" />
+  <input type="submit" value="Sell" />
+</form>
+
+<!-- Every time you sell a ShintoCoin, decrease the value of ShintoCoin by 1. You can only sell a ShintoCoin if you have a valance of 1 or more, do not allow sale of ShintoCoins for invalid amounts. -->

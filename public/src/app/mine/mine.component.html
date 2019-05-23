@@ -1,0 +1,10 @@
+<h1>Mine ShintoCoins</h1>
+<p>Here you can mine ShintoCoins by being the first to solve the algorithm:</p>
+<p>{{ questions[0] }}</p>
+<form (submit)="onSubmit()">
+  <input type="number" name="num" [(ngModel)]="shinto.answer" />
+  <input type="submit" value="Mine" />
+</form>
+
+
+<!-- Every time you answer the question correctly (mine a ShintoCoin), increase the value of ShintoCoin by 1 and store the new personal balance of ShintoCoins in the Service. -->

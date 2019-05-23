@@ -1,0 +1,9 @@
+<h1>Buy ShintoCoins</h1>
+<p>Current ShintoCoin Value: ${{ shintoValue }}.00</p>
+<p>Number of ShintoCoins Owned: {{ shintoBalance }}</p>
+<form (submit)="onSubmit()">
+  <input type="number" name="num" [(ngModel)]="shinto.purchaseQty" />
+  <input type="submit" value="Buy" />
+</form>
+
+<!-- Any time you purchase a ShintoCoin, increase the value of ShintoCoin by 1. -->
